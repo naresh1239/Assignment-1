@@ -15,14 +15,14 @@ type Props = {
 const Cards = ({ data }: Props) => {
   return (
     <div className="p-4">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div className="gap-3 mx-40">
         {data.map((item: CardDataType) => (
-          <Card key={item.id}>
-            <CardHeader className="flex flex-row items-center gap-4">
-              <img width={"100px"} height={"100px"} src={`https://api.dicebear.com/9.x/adventurer/svg?seed=${item.username}`} alt='image'/>
-              <CardTitle className="text-lg">{item.name}</CardTitle>
-            </CardHeader>
+          <Card key={item.id} className='mb-5 flex flex-row items-center '>
+            {/* <CardHeader className=""> */}
+              <img width={"200px"} height={"100px"} src={`https://api.dicebear.com/9.x/adventurer/svg?seed=${item.username}`} alt='image'/>
+            {/* </CardHeader> */}
             <CardContent className="space-y-1 text-sm text-muted-foreground">
+            <CardTitle className="text-lg">{item.name}</CardTitle>
               <p><strong>Username:</strong> {item.username}</p>
               <p><strong>Email:</strong> {item.email}</p>
               <p><strong>Phone:</strong> {item.phone}</p>
