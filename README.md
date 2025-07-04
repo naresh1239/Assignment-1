@@ -18,6 +18,7 @@ Getting Started
 Prerequisites
 Node.js (v16+ recommended)
 
+vist : - https://assignment-1-otq3.vercel.app/
 npm or yarn
 
 Installation
@@ -26,7 +27,7 @@ Clone the repository:
 bash
 Copy
 Edit
-git clone https://github.com/your-username/p1.git
+git clone https://github.com/naresh1239/p1.git
 cd p1
 Install dependencies:
 
