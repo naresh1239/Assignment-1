@@ -2,7 +2,6 @@
 import type { CardDataType } from './types'
 import {
   Card,
-  CardHeader,
   CardTitle,
   CardContent,
 } from "../components/ui/card"
