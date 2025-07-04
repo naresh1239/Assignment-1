@@ -1,4 +1,4 @@
-import React, { lazy, Suspense, useEffect, useState } from 'react'
+import { lazy, Suspense, useEffect, useState } from 'react'
 const Cards = lazy(() => import('./components/Cards'));
 import type { CardDataType } from './components/types';
 
