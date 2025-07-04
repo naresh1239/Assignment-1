@@ -5,6 +5,7 @@ import type { CardDataType } from './components/types';
 const App = () => {
   const [isLoading, setisLoading] = useState<boolean>(true);
   const [data, setdata] = useState<CardDataType[]>([])
+  const [ifError, setifError] = useState<unknown>('')
 
   const cardDatafn = async() =>{
     try {
@@ -13,6 +14,7 @@ const App = () => {
       setdata(jdata);
     } catch (error) {
       console.error('Error fetching card data:', error);
+      setifError(error)
     } finally {
       setisLoading(false);
     }
@@ -24,6 +26,10 @@ const App = () => {
   
   if(isLoading){
    return <Loader/>
+  }
+
+  if(ifError){
+    return <div className='error'>Error fetching data: {ifError.toString()}</div>
   }
 
   return (
