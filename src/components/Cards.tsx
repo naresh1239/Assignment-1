@@ -1,11 +1,11 @@
-import React from 'react'
+
 import type { CardDataType } from './types'
 import {
   Card,
   CardHeader,
   CardTitle,
   CardContent,
-} from "@/components/ui/card"
+} from "../components/ui/card"
 
 
 type Props = {
